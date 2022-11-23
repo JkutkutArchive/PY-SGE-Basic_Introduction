@@ -9,7 +9,7 @@
 #    By: Jkutkut  https://github.com/jkutkut              /:::::::::::::\      #
 #                                                        /:::::::::::::::\     #
 #    Created: 2022/11/23 20:40:43 by Jkutkut            /:::===========:::\    #
-#    Updated: 2022/11/23 21:12:20 by Jkutkut            '-----------------'    #
+#    Updated: 2022/11/24 09:13:01 by Jkutkut            '-----------------'    #
 #                                                                              #
 # **************************************************************************** #
 
@@ -49,7 +49,10 @@ Fahrenheit, si se indica que son grados Celsius, o en grados Celsius, si se
 indica que son grados Fahrenheit.
 '''
 if __name__ == "__main__":
-    initialUnit = askStringIn('Qué unidades quieres convertir?', CONVERSORS.keys())
+    initialUnit = askStringIn(
+        'Qué unidades quieres convertir?',
+        CONVERSORS.keys()
+    )
     finalUnit = 'C' if initialUnit == 'F' else 'F'
 
     initialTemp = askFloat(f'Temperatura (grados {initialUnit}º): ')

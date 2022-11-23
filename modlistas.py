@@ -9,7 +9,7 @@
 #    By: Jkutkut  https://github.com/jkutkut              /:::::::::::::\      #
 #                                                        /:::::::::::::::\     #
 #    Created: 2022/11/23 14:00:02 by Jkutkut            /:::===========:::\    #
-#    Updated: 2022/11/23 18:42:33 by Jkutkut            '-----------------'    #
+#    Updated: 2022/11/24 09:11:54 by Jkutkut            '-----------------'    #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,7 +27,8 @@ if __name__ == "__main__":
     mares[11] = 'alborán'
     print(f"Mares:\n[{', '.join(mares)}]")
 
-    # Ej2.2:En la lista mares, inserta un elemento más con el valor 'báltico'. Muestra la lista mares
+    # Ej2.2:En la lista mares, inserta un elemento más con el valor 'báltico'.
+    # Muestra la lista mares
     mares.append('báltico')
     print(f"Mares:\n[{', '.join(mares)}]")
 
@@ -58,10 +59,12 @@ if __name__ == "__main__":
             print("Los mares repetidos son: ", end="")
         print(*repetidos, sep=", ")
 
-    # Ej2.6:Elimina el tercer elemento de la lista mares y guárdalo en la variable mar1
+    # Ej2.6:Elimina el tercer elemento de la lista mares y guárdalo en la
+    # variable mar1
     mar1 = mares.pop(2)
 
-    # Ej2.7:Elimina el último elemento de la lista mares y guárdalo en la variable mar2
+    # Ej2.7:Elimina el último elemento de la lista mares y guárdalo en la
+    # variable mar2
     mar2 = mares.pop(-1)
 
     # Ej2.8:Guarda el valor del noveno elemento en la variable mar3
@@ -70,7 +73,8 @@ if __name__ == "__main__":
     # Ej2.9:Muestra los valores de las variables mar1, mar2 y mar3
     print(*[f"mar{i}: {eval('mar' + str(i))}" for i in range(1, 3+1)], sep="\n")
 
-    # Ej2.10:Elimina el primer elemento de la lista mares con valor 'báltico'. Muestra la lista mares
+    # Ej2.10:Elimina el primer elemento de la lista mares con valor 'báltico'.
+    # Muestra la lista mares
     if 'báltico' in mares:
         mares.remove('báltico')
     else:
@@ -81,12 +85,14 @@ if __name__ == "__main__":
     mares.clear()
 
 
-    # Ej2.12:Ordena por orden alfabético de 'a' a 'z' los elementos de la lista mares1
+    # Ej2.12:Ordena por orden alfabético de 'a' a 'z' los elementos de la lista
+    # mares1
     print(mares1)
     mares1.sort()
     print(mares1)
 
-    # Ej2.13:Ordena por orden alfabético de 'z' a 'a' los elementos de la lista mares2
+    # Ej2.13:Ordena por orden alfabético de 'z' a 'a' los elementos de la lista
+    # mares2
     print(mares2)
     mares2.sort(reverse=True)
     print(mares2)

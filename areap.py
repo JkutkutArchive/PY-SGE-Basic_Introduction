@@ -9,7 +9,7 @@
 #    By: Jkutkut  https://github.com/jkutkut              /:::::::::::::\      #
 #                                                        /:::::::::::::::\     #
 #    Created: 2022/11/23 18:45:51 by Jkutkut            /:::===========:::\    #
-#    Updated: 2022/11/23 19:37:28 by Jkutkut            '-----------------'    #
+#    Updated: 2022/11/23 21:28:55 by Jkutkut            '-----------------'    #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,6 +27,11 @@ def askFloat(question: str, minimum = None, maximum = None) -> float:
         except ValueError:
             print("El valor tiene que ser un número decimal.")
 
+'''
+Escribe un programa en Python que calcule el área y el perímetro de un
+rectángulo pidiendo al usuario que introduzca la base y la altura del mismo
+(con decimales).
+'''
 if __name__ == "__main__":
     base, height = (askFloat("Base: ", 0), askFloat("Altura: ", 0))
     area = base * height
